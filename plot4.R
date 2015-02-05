@@ -9,7 +9,7 @@ dSet$Global_active_power<-as.numeric(dSet$Global_active_power)
 #Combile date and time and store result in "Date" column.
 dSet$Date<-strptime(paste(dSet$Date,dSet$Time),"%Y-%m-%d %H:%M:%S")
 
-png(filename = "plot4.png",     width = 480, height = 480,    units = "px", bg = "transparent")
+png(filename = "plot4.png",     width = 480, height = 480,    units = "px",bg="white")
 
 par(mfrow = c(2, 2))
 ## Top-left

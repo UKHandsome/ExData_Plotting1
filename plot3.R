@@ -9,7 +9,7 @@ dSet$Global_active_power<-as.numeric(dSet$Global_active_power)
 #Combile date and time and store result in "Date" column.
 dSet$Date<-strptime(paste(dSet$Date,dSet$Time),"%Y-%m-%d %H:%M:%S")
 
-png(filename = "plot3.png",     width = 480, height = 480,    units = "px", bg = "transparent")
+png(filename = "plot3.png",     width = 480, height = 480,    units = "px", bg="white")
 plot(dSet$Date, dSet$Sub_metering_1,  type = "l",
      col = "black",
      xlab = "", ylab = "Energy sub metering")
